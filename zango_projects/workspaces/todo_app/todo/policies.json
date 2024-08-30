@@ -1,0 +1,16 @@
+{
+    "policies": [
+          {
+                "name": "TodoCrudViewAccess",
+                "description": "Access to the Todo CRUD View",
+                "statement": {
+                   "permissions": [
+                      {
+                            "name": "todo.views.TodoCrudView",
+                            "type": "view"
+                      }
+                   ]
+                }
+          }
+    ]
+}
