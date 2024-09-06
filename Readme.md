@@ -1,6 +1,6 @@
 # Zango Project
 
-This is a fully functional project made with Zango framework using manual setup. The best part is, there are 3 apps(or projects) inside this one project so that you dont have to start a new project from scratch everytime. Also, you can host all of these three apps on a single cloud and all the new apps that you create under this project will br hosted on the same cloud, saving cost, time and extra efforts requried to host projects.
+This is a fully functional project made with Zango framework using manual setup. The best part is, there are 3 apps(or projects) inside this one project so that you dont have to start a new project from scratch everytime. Also, you can host all of these three apps on a single cloud and all the new apps that you create under this project will be hosted on the same cloud, saving cost, time and extra efforts requried to host projects.
 
 ## Project structure
 ```
@@ -78,7 +78,7 @@ This will run the latest redis image on port 6379 .
 
 ### 2. Downloading this project and setting up
 
-Below are the steps for setting up the zango platform. To setup the specific project (like todo), checkout the readme files in the project directory, i.e, inside: `zango_projects/workspaces/project_name/`.
+Below are the steps for setting up the zango platform. To setup the specific app (like todo), checkout the readme files in the project directory, i.e, inside: `zango_projects/workspaces/app_name/`.
 
 a. Download this project and create a python virtual env in the root directory.
 
@@ -87,26 +87,26 @@ b. Now activate the virtual env and install zango using:
 pip install zango
 ```
 
-c. Now, you'll have to delete the workspaces folder present inside `zango_projects` directory initially because it will be created dynamically from the zango platform and then you can paste the code of that project from this repository. Suppose you created `todo_app` from the zango platform, zango will automatically generate todo_app directory with some config files inside `zango_projects/workspaces` and then you can replace all the files inside `zango_project/workspaces/todo_app` with the files present in this repository. This is because zango creates schema of the app(todo_app) only when we create it dynamically.
+c. Now, you'll have to delete the workspaces folder present inside `zango_projects` directory initially because it will be created dynamically from the zango platform and then you can paste the code of that project from this repository. Suppose you created `todo_app` from the zango platform, zango will automatically generate todo_app directory with some config files inside `zango_projects/workspaces` and then you can replace all the files inside `zango_project/workspaces/todo_app` with the files present in this repository. This is because zango creates schema of the app(todo_app) only when we create it dynamically(from zango platform).
 
 d. After you have deleted the workspaces folder, go inside the zango_projects directory (where manage.py file is located) and run the `python manage.py migrate_schemas` command to migrate zango level migrations. Since zango is built on top of django, you need to apply its migrations first.
 
 e. Now, create a zango superuser for accessing the zango platform using the command `python manage.py createsuperuser`.
 
 f. After the platform user has been created, run the following commands inside zango_project directory:
-    - Start the project using traditional django command:
-    ```
-    python manage.py runserver
-    ```
-    - In another terminal window, start celery worker using command:
-    ```
-    celery -A zango_projects worker -l INFO
-    ```
-    - In one more terminal window, start celery beat using command:
-    ```
-    celery -A zango_projects beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
-    ```
+- Start the project using traditional django command:
+```
+python manage.py runserver
+```
+- In another terminal window, start celery worker using command:
+```
+celery -A zango_projects worker -l INFO
+```
+- In one more terminal window, start celery beat using command:
+```
+celery -A zango_projects beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+```
 
-g. Then go to `localhost:8000/platform` where you'll see a login screen. If everything worked as expected so far, then congratulations! You have successfully setup the zango platform. Now its time to create some projects using zango.
+g. Then go to `localhost:8000/platform` where you'll see a login screen. Congratulations! You have successfully setup the zango platform. Now its time to create some projects using zango.
 
 Please head over to the [readme of todo_app](https://github.com/Healthlane-Technologies/zango-projects/tree/main/zango_projects/workspaces/todo_app/Readme.md) for a detailed guide on creating and getting todo_app up and running.
