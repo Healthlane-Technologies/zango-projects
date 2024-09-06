@@ -27,8 +27,8 @@ todo_app               # app root where this readme file is located.
 6. Delete `manifest.json` and `settings.json` files and copy all the files and folder present inside `zango_projects/workspaces/todo_app/` from the [zango-projects repository](https://github.com/Healthlane-Technologies/zango-projects).
 
 7. Now run the following command to apply migrations of the todo app:
-`
+```
 python manage.py ws_migrate todo_app
-`
+```
 
 8. Congratulations! Your todo app has been successfully added to your zango project. In the next steps we will understand how to configure our todo app from our zango platform and create our first todo!
