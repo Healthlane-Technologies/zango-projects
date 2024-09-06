@@ -19,6 +19,8 @@ todo_app               # app root where this readme file is located.
 2. After you main zango project is up and running go to `localhost:8000/platform` and login using the credentials that you created in the previous guide.
 
 3. After you have logged in successfully, you'll see a dashboard like the one below:
+<img width="1402" alt="app_panel_landing-af182a79b1f4735606e8941830997dc2" src="https://github.com/user-attachments/assets/b07e8008-8942-46b5-906c-0b05796af89b">
+
 
 4. When you click on the launch new app, a panel will from from the right side of the screen. Enter the app name as `todo_app`(should be exact same), add any description and click launch app.
 
