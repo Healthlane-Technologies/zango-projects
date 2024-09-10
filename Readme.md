@@ -91,7 +91,7 @@ c. Now, you'll have to delete the workspaces folder present inside `zango_projec
 
 d. After you have deleted the workspaces folder, go inside the zango_projects directory (where manage.py file is located) and run the `zango initialize-project zango_projects` command to initialize the project database and create a platform user.
 
-e. After the platform user has been created, run the following commands inside zango_project directory:
+e. After the platform user has been created, run the following commands inside zango_projects directory:
 
 - Start the project using traditional django command:
 ```
