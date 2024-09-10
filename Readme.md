@@ -89,7 +89,7 @@ pip install zango
 
 c. Now, you'll have to delete the workspaces folder present inside `zango_projects` directory initially because it will be created dynamically from the zango platform and then you can paste the code of that project from this repository. Suppose you created `todo_app` from the zango platform, zango will automatically generate todo_app directory with some config files inside `zango_projects/workspaces` and then you can replace all the files inside `zango_project/workspaces/todo_app` with the files present in this repository. This is because zango creates schema of the app(todo_app) only when we create it dynamically(from zango platform).
 
-d. After you have deleted the workspaces folder, go inside the zango_projects directory (where manage.py file is located) and run the `zango initialize-project` command to initialize the project database and create the platform user.
+d. After you have deleted the workspaces folder, go inside the zango_projects directory (where manage.py file is located) and run the `zango initialize-project` command to initialize the project database and create a platform user.
 
 e. After the platform user has been created, run the following commands inside zango_project directory:
 
