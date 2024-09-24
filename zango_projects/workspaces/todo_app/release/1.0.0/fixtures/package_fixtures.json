@@ -1,0 +1,75 @@
+[
+{
+    "model": "dynamic_models.genericloginconfigmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-08-28T10:40:34.810Z",
+        "created_by": null,
+        "modified_at": "2024-08-28T10:40:34.810Z",
+        "modified_by": null,
+        "object_uuid": "9f635645-9115-4db5-bbc9-bd528058749d",
+        "config": {
+            "card_color": "#FFFFFF",
+            "card_title": "",
+            "header_text": "",
+            "corner_radius": 4,
+            "logo_placement": "topLeft",
+            "paragraph_text": "",
+            "card_text_color": "#6c747d",
+            "background_color": "#5048ED",
+            "paragraph_text_color": "#FFFFFF"
+        },
+        "logo": "",
+        "background_image": ""
+    }
+},
+{
+    "model": "dynamic_models.loginconfigmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-08-28T10:40:34.834Z",
+        "created_by": null,
+        "modified_at": "2024-08-28T10:40:34.854Z",
+        "modified_by": null,
+        "object_uuid": "c54ef638-58e8-45ee-b99e-5c27f0423440",
+        "user_role": 3,
+        "config": {
+            "landing_url": "/todo/all/"
+        }
+    }
+},
+{
+    "model": "dynamic_models.framesmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-08-28T10:41:08.172Z",
+        "created_by": null,
+        "modified_at": "2024-08-28T10:41:08.172Z",
+        "modified_by": null,
+        "object_uuid": "1b9d50f7-114e-4666-9bca-208d613aaddc",
+        "user_role": 3,
+        "config": {
+            "menu": [
+                {
+                    "url": "/todo/all/",
+                    "name": "todo",
+                    "children": []
+                }
+            ],
+            "config": {
+                "color": {
+                    "accent": "#DDE2E5",
+                    "header": "#FFFFFF",
+                    "primary": "#5048ED",
+                    "sidebar": "#E1D6AE",
+                    "secondary": "#E1D6AE",
+                    "background": "#FFFFFF",
+                    "typography": "#212429",
+                    "headerBorder": "#DDE2E5"
+                }
+            },
+            "scripts": []
+        }
+    }
+}
+]

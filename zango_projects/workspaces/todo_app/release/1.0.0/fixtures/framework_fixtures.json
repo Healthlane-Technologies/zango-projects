@@ -1,0 +1,68 @@
+[
+{
+    "model": "appauth.userrolemodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-08-27T12:59:27.310Z",
+        "created_by": "",
+        "modified_at": "2024-08-27T12:59:29.521Z",
+        "modified_by": "",
+        "name": "AnonymousUsers",
+        "config": null,
+        "is_active": true,
+        "is_default": true,
+        "policies": [
+            [
+                "AllowFromAnywhere",
+                null
+            ],
+            [
+                "LoginViewAccess",
+                "packages.login.appauth"
+            ]
+        ],
+        "policy_groups": []
+    }
+},
+{
+    "model": "appauth.userrolemodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2024-08-27T12:59:27.312Z",
+        "created_by": "",
+        "modified_at": "2024-08-27T12:59:27.312Z",
+        "modified_by": "",
+        "name": "SystemUsers",
+        "config": null,
+        "is_active": true,
+        "is_default": true,
+        "policies": [],
+        "policy_groups": []
+    }
+},
+{
+    "model": "appauth.userrolemodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2024-08-28T10:24:14.760Z",
+        "created_by": "",
+        "modified_at": "2024-08-28T10:24:14.795Z",
+        "modified_by": "",
+        "name": "Todo_user",
+        "config": null,
+        "is_active": true,
+        "is_default": false,
+        "policies": [
+            [
+                "AllowFromAnywhere",
+                null
+            ],
+            [
+                "TodoCrudViewAccess",
+                "todo"
+            ]
+        ],
+        "policy_groups": []
+    }
+}
+]
